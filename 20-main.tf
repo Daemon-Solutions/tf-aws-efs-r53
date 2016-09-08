@@ -1,5 +1,11 @@
 resource "aws_efs_file_system" "fs" {
-  tags { Name = "${var.prefix}-${var.name}" }
+  performance_mode = "${var.efs_performance}"
+
+  tags {
+
+    Name = "${var.prefix}-${var.name}"
+
+  }
 }
 
 resource "aws_efs_mount_target" "mount_a" {
