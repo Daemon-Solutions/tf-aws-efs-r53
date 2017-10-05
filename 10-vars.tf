@@ -38,7 +38,7 @@ variable "create_cnames" {
 variable "availability_zones" {
   description = "Comma seperated list of availability zones to span this EFS over"
   type = "string"
-  default = "eu-west-1b,eu-west-1c,eu-west-1d"
+  default = "eu-west-1a,eu-west-1b,eu-west-1c"
 }
 
 variable "efs_performance" { 
